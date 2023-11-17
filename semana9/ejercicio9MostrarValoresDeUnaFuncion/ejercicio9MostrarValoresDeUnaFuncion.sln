@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejercicio9MostrarValoresDeUnaFuncion", "ejercicio9MostrarValoresDeUnaFuncion\ejercicio9MostrarValoresDeUnaFuncion.csproj", "{2FCE3017-97A8-4538-BA5F-CE743A14195C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FCE3017-97A8-4538-BA5F-CE743A14195C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCE3017-97A8-4538-BA5F-CE743A14195C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCE3017-97A8-4538-BA5F-CE743A14195C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCE3017-97A8-4538-BA5F-CE743A14195C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A51F1FF5-1536-4D75-A2AD-0434E30E8A8E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio8MediaAritmetica\ejercicio8MediaAritmetica\bin\Debug\ejercicio8MediaAritmetica.exe.config
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio8MediaAritmetica\ejercicio8MediaAritmetica\bin\Debug\ejercicio8MediaAritmetica.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio8MediaAritmetica\ejercicio8MediaAritmetica\bin\Debug\ejercicio8MediaAritmetica.pdb
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio8MediaAritmetica\ejercicio8MediaAritmetica\obj\Debug\ejercicio8MediaAritmetica.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio8MediaAritmetica\ejercicio8MediaAritmetica\obj\Debug\ejercicio8MediaAritmetica.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio8MediaAritmetica\ejercicio8MediaAritmetica\obj\Debug\ejercicio8MediaAritmetica.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio8MediaAritmetica\ejercicio8MediaAritmetica\obj\Debug\ejercicio8MediaAritmetica.pdb

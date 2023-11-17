@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejercicio8MediaAritmetica", "ejercicio8MediaAritmetica\ejercicio8MediaAritmetica.csproj", "{B722AE63-0981-4A00-B073-615FFDF39E61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B722AE63-0981-4A00-B073-615FFDF39E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B722AE63-0981-4A00-B073-615FFDF39E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B722AE63-0981-4A00-B073-615FFDF39E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B722AE63-0981-4A00-B073-615FFDF39E61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {424C39AA-1318-40C1-B5D4-4B9CB5B01A11}
+	EndGlobalSection
+EndGlobal

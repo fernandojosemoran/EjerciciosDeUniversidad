@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio10Producto&FormaDePago\ejercicio10Producto&FormaDePago\bin\Debug\ejercicio10Producto&FormaDePago.exe.config
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio10Producto&FormaDePago\ejercicio10Producto&FormaDePago\bin\Debug\ejercicio10Producto&FormaDePago.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio10Producto&FormaDePago\ejercicio10Producto&FormaDePago\bin\Debug\ejercicio10Producto&FormaDePago.pdb
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio10Producto&FormaDePago\ejercicio10Producto&FormaDePago\obj\Debug\ejercicio10Producto&FormaDePago.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio10Producto&FormaDePago\ejercicio10Producto&FormaDePago\obj\Debug\ejercicio10Producto&FormaDePago.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio10Producto&FormaDePago\ejercicio10Producto&FormaDePago\obj\Debug\ejercicio10Producto&FormaDePago.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio10Producto&FormaDePago\ejercicio10Producto&FormaDePago\obj\Debug\ejercicio10Producto&FormaDePago.pdb

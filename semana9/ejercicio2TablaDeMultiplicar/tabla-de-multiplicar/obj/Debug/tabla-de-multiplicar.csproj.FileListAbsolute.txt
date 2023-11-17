@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\tabla-de-multiplicar\tabla-de-multiplicar\bin\Debug\tabla-de-multiplicar.exe.config
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\tabla-de-multiplicar\tabla-de-multiplicar\bin\Debug\tabla-de-multiplicar.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\tabla-de-multiplicar\tabla-de-multiplicar\bin\Debug\tabla-de-multiplicar.pdb
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\tabla-de-multiplicar\tabla-de-multiplicar\obj\Debug\tabla-de-multiplicar.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\tabla-de-multiplicar\tabla-de-multiplicar\obj\Debug\tabla-de-multiplicar.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\tabla-de-multiplicar\tabla-de-multiplicar\obj\Debug\tabla-de-multiplicar.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\tabla-de-multiplicar\tabla-de-multiplicar\obj\Debug\tabla-de-multiplicar.pdb

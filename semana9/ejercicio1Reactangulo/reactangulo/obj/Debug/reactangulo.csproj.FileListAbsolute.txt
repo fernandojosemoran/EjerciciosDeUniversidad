@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\reactangulo\reactangulo\bin\Debug\reactangulo.exe.config
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\reactangulo\reactangulo\bin\Debug\reactangulo.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\reactangulo\reactangulo\bin\Debug\reactangulo.pdb
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\reactangulo\reactangulo\obj\Debug\reactangulo.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\reactangulo\reactangulo\obj\Debug\reactangulo.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\reactangulo\reactangulo\obj\Debug\reactangulo.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\reactangulo\reactangulo\obj\Debug\reactangulo.pdb

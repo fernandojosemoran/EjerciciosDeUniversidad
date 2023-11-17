@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio4SumarAlCuadrado\ejercicio4SumarAlCuadrado\bin\Debug\ejercicio4SumarAlCuadrado.exe.config
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio4SumarAlCuadrado\ejercicio4SumarAlCuadrado\bin\Debug\ejercicio4SumarAlCuadrado.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio4SumarAlCuadrado\ejercicio4SumarAlCuadrado\bin\Debug\ejercicio4SumarAlCuadrado.pdb
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio4SumarAlCuadrado\ejercicio4SumarAlCuadrado\obj\Debug\ejercicio4SumarAlCuadrado.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio4SumarAlCuadrado\ejercicio4SumarAlCuadrado\obj\Debug\ejercicio4SumarAlCuadrado.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio4SumarAlCuadrado\ejercicio4SumarAlCuadrado\obj\Debug\ejercicio4SumarAlCuadrado.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejercicio4SumarAlCuadrado\ejercicio4SumarAlCuadrado\obj\Debug\ejercicio4SumarAlCuadrado.pdb

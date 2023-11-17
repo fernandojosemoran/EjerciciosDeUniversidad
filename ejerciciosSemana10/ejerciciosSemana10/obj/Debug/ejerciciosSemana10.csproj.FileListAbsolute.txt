@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejerciciosSemana10\ejerciciosSemana10\bin\Debug\ejerciciosSemana10.exe.config
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejerciciosSemana10\ejerciciosSemana10\bin\Debug\ejerciciosSemana10.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejerciciosSemana10\ejerciciosSemana10\bin\Debug\ejerciciosSemana10.pdb
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejerciciosSemana10\ejerciciosSemana10\obj\Debug\ejerciciosSemana10.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejerciciosSemana10\ejerciciosSemana10\obj\Debug\ejerciciosSemana10.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejerciciosSemana10\ejerciciosSemana10\obj\Debug\ejerciciosSemana10.exe
+C:\Users\ferna\OneDrive\Escritorio\programacion1-semana9-fernandoJoseMoran\ejerciciosSemana10\ejerciciosSemana10\obj\Debug\ejerciciosSemana10.pdb
