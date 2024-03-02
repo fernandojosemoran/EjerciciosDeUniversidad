@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\programacion2-semana7-arrays\programacion2-semana7-arrays\bin\Debug\programacion2-semana7-arrays.exe.config
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\programacion2-semana7-arrays\programacion2-semana7-arrays\bin\Debug\programacion2-semana7-arrays.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\programacion2-semana7-arrays\programacion2-semana7-arrays\bin\Debug\programacion2-semana7-arrays.pdb
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\programacion2-semana7-arrays\programacion2-semana7-arrays\obj\Debug\programacion2-semana7-arrays.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\programacion2-semana7-arrays\programacion2-semana7-arrays\obj\Debug\programacion2-semana7-arrays.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\programacion2-semana7-arrays\programacion2-semana7-arrays\obj\Debug\programacion2-semana7-arrays.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\programacion2-semana7-arrays\programacion2-semana7-arrays\obj\Debug\programacion2-semana7-arrays.pdb
