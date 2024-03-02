@@ -1,66 +1,51 @@
 ﻿using System;
 
+
+/*
+    Crea un programa que gestione el inventario de una tienda. Utiliza un arreglo para mantener
+    un registro de los productos disponibles, un arreglo para sus precios y un arreglo para sus 
+    cantidades en stock. Permite al usuario elegir a través de un menú las opciones: agregar, 
+    vender, actualizar productos y salir 
+*/
+
 namespace programacion2_semana7_arrays
 {
     public class Inventario
     {
+        //Instancia del objeto Crud para acceder a las funciones del inventario
+        private Crud instanciaCrud = new Crud();
+        private InteractuarConUsuario accion = new InteractuarConUsuario();
+        private Mostrar mostrar = new Mostrar();
+
+        //Cabecera para la tabla del inventario
+        private string cabecera = $"ID \t Producto \t Precio \t Cantidad \t Fecha\n";
+
         public void MainInventario()
         {
-            // Método para mostrar el banner de la tienda
-            void MostrarBanner()
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(
-                    @"
-                    =======================================================================
-                    =====    ==============================================================
-                    ======  ===============================================================
-                    ======  ===========================================================  ==
-                    ======  ====   ===  =  ===   ====   ====   ===  =   ===  ==    ===    =
-                    ======  ===  =  ==  =  ==  =  ==  =  ==  =  ==    =  ======  =  ===  ==
-                    ======  ======  ===   ======  ===  ====  =====  =======  ==  =  ===  ==
-                    =  ===  ====    ===   ====    ====  ===  =====  =======  ==    ====  ==
-                    =  ===  ===  =  ==== ====  =  ==  =  ==  =  ==  =======  ==  ======  ==
-                    ==     =====    ==== =====    ===   ====   ===  =======  ==  ======   =
-                    =======================================================================
-                "
-                );
-
-                Console.ForegroundColor = ConsoleColor.Gray;
-            }
-
-
-            //Cabecera para la tabla del inventario
-            string cabecera = $"ID \t Producto \t Precio \t Cantidad \t Fecha\n";
-
-            //Instancia del objeto Crud para acceder a las funciones del inventario
-            Crud instanciaCrud = new Crud();
-
-            InteractuarConUsuario accion = new InteractuarConUsuario();
-
             //Obtenemos el inventario inicial
             Producto[] inventario = instanciaCrud.ObtenerProductos();
 
             //Mostramos el banner de la tienda y el inventario inicial
-            MostrarBanner();
-            accion.MostrarInventario(inventario, cabecera);
+            this.mostrar.MostrarBanner();
+            this.mostrar.MostrarInventario(inventario, cabecera);
 
             //Bucle principal para el menú de opciones
             for (; ; )
             {
                 //Mostramos el menú de opciones
                 Console.WriteLine("\n1. Crear producto\n2. Actualizar producto\n3. Eliminar producto\n4. Vender producto\n5. Limpiar consola\n6. Salir");
+                Console.Write("\nSeleccione un indice: ");
                 int solicitarId = int.Parse(Console.ReadLine());
 
                 //Si el ID ortorgado es 5 entonces
-                if ( solicitarId == 5)
+                if (solicitarId == 5)
                 {
                     //Limpiamos la consola
                     Console.Clear();
                     //Mostramos el banner
-                    MostrarBanner();
+                    this.mostrar.MostrarBanner();
                     //Mostramos el inventario
-                    accion.MostrarInventario(accion.GetInventarioActualizado(), cabecera);
+                    this.mostrar.MostrarInventario(this.accion.GetInventarioActualizado(), this.cabecera);
                 }
 
                 //Salir del programa si se selecciona la opción 5
@@ -74,16 +59,16 @@ namespace programacion2_semana7_arrays
                 switch (solicitarId)
                 {
                     case 1:
-                        accion.PedirNuevoProducto();
+                        this.accion.PedirNuevoProducto();
                         break;
                     case 2:
-                        accion.PedirActualizarProducto();
+                        this.accion.PedirActualizarProducto();
                         break;
                     case 3:
-                        accion.PedirEliminarProducto();
+                        this.accion.PedirEliminarProducto();
                         break;
                     case 4:
-                        accion.PedirVenderProducto();
+                        this.accion.PedirVenderProducto();
                         break;
                 }
             }
@@ -92,6 +77,8 @@ namespace programacion2_semana7_arrays
 
     internal class Crud
     {
+        private Mostrar mostrar = new Mostrar();
+
         //Array que almacena los productos del inventario
         private Producto[] inventario = new Producto[]
         {
@@ -107,14 +94,16 @@ namespace programacion2_semana7_arrays
             new Producto(10, "Smartwatch", 199.99, 90, DateTime.Parse("2024-02-28"))
         };
 
-        // Propiedad para obtener el próximo identificador de producto
+        //Propiedad para obtener el proximo identificador de producto
         public int id => inventario.Length + 1;
 
-        // Método para agregar un nuevo producto al inventario
+        // Metodo para agregar un nuevo producto al inventario
         public void CrearProducto(Producto nuevoProducto)
         {
-            Array.Resize(ref inventario, this.inventario.Length + 1); // Aumentamos la longitud del array en 1
-            inventario[inventario.Length - 1] = nuevoProducto; // Asignamos el nuevo producto en la última posición
+            //Aumentamos el rango del array en 1 valor
+            Array.Resize(ref inventario, this.inventario.Length + 1);
+            //Asignamos el nuevo producto a la ultima posición del array
+            inventario[inventario.Length - 1] = nuevoProducto; 
         }
 
 
@@ -125,28 +114,36 @@ namespace programacion2_semana7_arrays
         }
         public void ActualizarProducto(int indice, Producto productoParaActualizar)
         {
+            //Declaramos una variable para guardar el nombre
             string nombre;
 
+            // Verificamos que el indice otorgado por el usuario sea valido 
             if (indice >= 0 && indice < this.inventario.Length)
             {
+                //Guardamos el nombre del producto
                 nombre = this.inventario[indice].Nombre;
 
+                //Modificamos los valores del producto a modificar
                 this.inventario[indice].Id = productoParaActualizar.Id;
                 this.inventario[indice].Nombre = productoParaActualizar.Nombre;
                 this.inventario[indice].Precio = productoParaActualizar.Precio;
                 this.inventario[indice].Cantidad = productoParaActualizar.Cantidad;
                 this.inventario[indice].Fecha = productoParaActualizar.Fecha;
 
-                Console.WriteLine($"\nProducto {nombre} fue actualizado exitosamente.");
+                //Mostramos un mensaje indicando que el producti fue actualizado correctamente
+                this.mostrar.MostrarMensaje($"\nProducto {nombre} fue actualizado exitosamente.\n", this.mostrar.MENSAJE_POSITIVO);
             }
             else
             {
-                Console.WriteLine("\nEl indice esta fuera del rango del inventario.");
+                //Mostramos un mensaje indicando que el indice no es valido
+                this.mostrar.MostrarMensaje("\nEl indice esta fuera del rango del inventario.\n", this.mostrar.MENSAJE_NEGATIVO);
             }
         }
 
+        //Metodo del crud que eliminara el producto
         public void EliminarProducto(int id)
         {
+            Console.WriteLine($"\n\nEl Id es: {id}\n\n");
             //Declaramos un variable para guardar el nombre del producto a buscar
             string producto;
             //Buscar el producto en el inventario
@@ -167,14 +164,11 @@ namespace programacion2_semana7_arrays
                     }
 
                     //Indicamos al usuario que el producto fue eliminado
-                    Console.WriteLine($"\nProducto {producto} ha sido eliminado exitosamente.\n");
+                    this.mostrar.MostrarMensaje($"\nProducto {producto} ha sido eliminado exitosamente.\n", this.mostrar.MENSAJE_POSITIVO);
                     //Redimensionar el array para eliminar el ultimo elemento
                     Array.Resize(ref this.inventario, this.inventario.Length - 1);
                 }
             }
-
-            //En caso de que el producto no sea encontrado mostramos mensaje informando al usuario
-            Console.WriteLine($"\nEl producto con el ID {id} no se encuentra en el inventario.");
         }
 
     }
@@ -205,23 +199,36 @@ namespace programacion2_semana7_arrays
         }
     }
 
-    internal class InteractuarConUsuario
-    {
-        //Cabecera para la tabla del inventario
-        private string cabecera = $"ID \t Producto \t Precio \t Cantidad \t Fecha\n";
-        private Crud instanciaCrud = new Crud();
+    internal class Mostrar {
+        public int MENSAJE_POSITIVO = 0;
+        public int MENSAJE_NEGATIVO = 1;
 
-        //Metodo para obtener los datos actualizado en tiempo real
-        public Producto[] GetInventarioActualizado()
+        //Asignamos un metodo que muestre un mensaje positivo o negativo
+        public void MostrarMensaje(string mensaje, int tipo)
         {
-            return this.instanciaCrud.ObtenerProductos();
+            const int positivo = 0;
+            const int negativo = 1;
+
+            if (tipo == negativo)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(mensaje);
+                Console.ForegroundColor = ConsoleColor.Gray;
+            }
+
+            if (tipo == positivo)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(mensaje);
+                Console.ForegroundColor = ConsoleColor.Gray;
+            }
         }
 
         //Metodo para mostrar el inventario
         public void MostrarInventario(Producto[] productos, string cabeceras)
         {
             //Mostramos las cabeceras del inventario
-            Console.WriteLine(cabeceras);
+            Console.WriteLine("\n" + cabeceras);
             //Recorremos las filas del inventario
             foreach (Producto producto in productos)
             {
@@ -230,51 +237,32 @@ namespace programacion2_semana7_arrays
             }
         }
 
-        //Metodo para crear un nuevo producto
-        public void PedirNuevoProducto()
+        //Metodo para mostrar el banner de la tienda
+        public void MostrarBanner()
         {
-            //Obtenemos el id proximo para crear el nuevo producto
-            int identificador = this.instanciaCrud.id;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(
+                @"
+                    =======================================================================
+                    =====    ==============================================================
+                    ======  ===============================================================
+                    ======  ===========================================================  ==
+                    ======  ====   ===  =  ===   ====   ====   ===  =   ===  ==    ===    =
+                    ======  ===  =  ==  =  ==  =  ==  =  ==  =  ==    =  ======  =  ===  ==
+                    ======  ======  ===   ======  ===  ====  =====  =======  ==  =  ===  ==
+                    =  ===  ====    ===   ====    ====  ===  =====  =======  ==    ====  ==
+                    =  ===  ===  =  ==== ====  =  ==  =  ==  =  ==  =======  ==  ======  ==
+                    ==     =====    ==== =====    ===   ====   ===  =======  ==  ======   =
+                    =======================================================================
+                "
+            );
 
-            //Le pedimos al usuario los datos correspondientes para crear el producto
-            Console.Write("\nNombre del producto: ");
-            string nombre = Console.ReadLine();
-
-            Console.Write("\nPrecio del producto: ");
-            double precio = double.Parse(Console.ReadLine());
-
-            Console.Write("\nCantidad de productos disponibles: ");
-            int cantidad = int.Parse(Console.ReadLine());
-
-            Console.Write("\nFecha use el formato YYY-MMM-DDD: \n");
-            DateTime fecha = DateTime.Parse(Console.ReadLine());
-
-            //Creamos un nuevo producto
-            Producto nuevoProducto = new Producto(identificador, nombre, precio, cantidad, fecha);
-
-            //Agregamos el nuevo producto al inventario
-            this.instanciaCrud.CrearProducto(nuevoProducto);
-
-            //Limpiamos la consola y mostramos el inventario actualizado
-            this.MostrarInventario(this.instanciaCrud.ObtenerProductos(), this.cabecera);
-
-            //Indicamos al usuario que el producto fue creado exitosamente
-            Console.WriteLine($"\nProducto {nombre} creado exitosamente.");
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
 
-        public void PedirActualizarProducto()
+        public (string, double, int, DateTime) MostrarSolicitudDeProducto()
         {
-            Console.Write("\nIngrese indice del producto: ");
-            int indice = int.Parse(Console.ReadLine()) - 1;
-
-            // Utilizamos la misma instancia de Crud que se utilizó para obtener los productos inicialmente
-            Producto[] productos = instanciaCrud.ObtenerProductos();
-
-            Console.WriteLine("Producto a modificar:\n");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"nombre: {productos[indice].Nombre}\tprecio: {productos[indice].Precio}\tcantidad: {productos[indice].Cantidad}\tfecha: {productos[indice].Fecha}");
-            Console.ForegroundColor = ConsoleColor.Gray;
-
+            //Le pedimos al usuario los datos correspondientes para crear el producto
             Console.Write("\nNombre del producto: ");
             string nombre = Console.ReadLine();
 
@@ -286,7 +274,74 @@ namespace programacion2_semana7_arrays
 
             Console.Write("\nFecha use el formato YYY-MMM-DDD: ");
             DateTime fecha = DateTime.Parse(Console.ReadLine());
-          
+
+            //Devolvemos los datos otorgados por el usuario
+            return (nombre,precio,cantidad,fecha);
+        }
+
+        //Creamos un metod que muestre la informacion de un producto a modificar
+        public void MostrarProductoParaInteractuar(string informacionDeProducto)
+        {
+            Console.WriteLine("Producto a modificar:\n");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(informacionDeProducto);
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+
+    }
+
+    internal class InteractuarConUsuario
+    {
+        //Cabecera para la tabla del inventario
+        private string cabecera = $"ID \t Producto \t Precio \t Cantidad \t Fecha\n";
+        private Crud instanciaCrud = new Crud();
+        private Mostrar mostrar = new Mostrar();    
+
+        //Metodo para obtener los datos actualizado en tiempo real
+        public Producto[] GetInventarioActualizado()
+        {
+            return this.instanciaCrud.ObtenerProductos();
+        }
+
+        //Metodo para crear un nuevo producto
+        public void PedirNuevoProducto()
+        {
+            //Obtenemos el id proximo para crear el nuevo producto
+            int identificador = this.instanciaCrud.id;
+
+            //Le pedimos al usuario los datos correspondientes para crear el producto
+            (string nombre, double precio, int cantidad, DateTime fecha) = this.mostrar.MostrarSolicitudDeProducto();
+
+            //Creamos un nuevo producto
+            Producto nuevoProducto = new Producto(identificador, nombre, precio, cantidad, fecha);
+
+            //Agregamos el nuevo producto al inventario
+            this.instanciaCrud.CrearProducto(nuevoProducto);
+
+            //Limpiamos la consola y mostramos el inventario actualizado
+            this.mostrar.MostrarInventario(this.instanciaCrud.ObtenerProductos(), this.cabecera);
+
+            //Indicamos al usuario que el producto fue creado exitosamente
+            this.mostrar.MostrarMensaje($"\nProducto {nombre} creado exitosamente.", mostrar.MENSAJE_POSITIVO);
+        }
+
+        //Creamos un metodo el cual ejecute la logica que interactue con la actualizacion de un producto
+        public void PedirActualizarProducto()
+        {
+            //Pedimos al usuario que ingrese un ID
+            Console.Write("\nIngrese indice del producto: ");
+            int indice = int.Parse(Console.ReadLine()) - 1;
+
+            //Utilizamos la misma instancia de Crud que se utilizó para obtener los productos inicialmente
+            Producto[] productos = instanciaCrud.ObtenerProductos();
+
+            //Mostramos informacion del producto a modificar
+            this.mostrar.MostrarProductoParaInteractuar($"nombre: {productos[indice].Nombre}\tprecio: {productos[indice].Precio}\tcantidad: {productos[indice].Cantidad}\tfecha: {productos[indice].Fecha}");
+
+            //Le pedimos al usuario los datos correspondientes para crear el producto
+            (string nombre, double precio, int cantidad, DateTime fecha) = this.mostrar.MostrarSolicitudDeProducto();
+
+            //Creamos un nuevo producto
             Producto productoParaActualizar = new Producto(
                 id: (indice + 1),
                 nombre: nombre,
@@ -302,11 +357,8 @@ namespace programacion2_semana7_arrays
                 productoParaActualizar: productoParaActualizar
             );
 
-            //Obtenemos todos los datos
-            Producto[] inventarioActualzado = this.instanciaCrud.ObtenerProductos();
-
             //Mostramos el inventario 
-            this.MostrarInventario(inventarioActualzado, this.cabecera);
+            this.mostrar.MostrarInventario(this.instanciaCrud.ObtenerProductos(), this.cabecera);
         }
 
         //Metodo que contiene la logica para pedir la informacion correspondiente para eliminar un producto
@@ -323,10 +375,8 @@ namespace programacion2_semana7_arrays
             //Creamos un lista de productos que hace referencia a una actualizacion de los productos anteriormente creados
             Producto[] inventarioActualzado = this.instanciaCrud.ObtenerProductos();
 
-            //Mostramos un mensaje que informe al usuario que el producto fue eliminado
-            Console.WriteLine($"\nSe ha eliminado el producto con ID {id} del inventario.");
             //Mostramos el inventario actualizado con los productos anteriormente creados
-            this.MostrarInventario(inventarioActualzado, this.cabecera);
+            this.mostrar.MostrarInventario(inventarioActualzado, this.cabecera);
         }
 
         public void PedirVenderProducto()
@@ -368,12 +418,11 @@ namespace programacion2_semana7_arrays
             Console.ForegroundColor = ConsoleColor.Cyan;
             //Asignamos una cabecera indicando los producto que se vendera
             Console.WriteLine($"\nNombre: {nombre}\tPrecio: {precio}\t Cantidad: {cantidad}\n");
+            Console.ForegroundColor = ConsoleColor.Gray;
             //Indicamos al usuario que cantidad de productos quiere vender
             Console.Write("Ingrese cantidad a vender: ");
             //Convertimos la cantidad de productos que el usuario quiere vender a un numero entero
             int cantidadParaVender = int.Parse(Console.ReadLine());
-      
-            Console.ForegroundColor = ConsoleColor.Gray;
 
             //Si la cantidad que el usuario quiere vender es menor o igual a los existentes, entonces vendemos los productos
             if (cantidadParaVender <= cantidad)
@@ -384,12 +433,12 @@ namespace programacion2_semana7_arrays
                 //Calculamos el pago del total a los productos que venderemos
                 pago = (cantidadParaVender) * precio;
                 //Mostramos el pago que el usuario quiere vender 
-                Console.WriteLine($"\nMonto a pagar: {pago}");
+                this.mostrar.MostrarMensaje($"\nMonto a pagar: {pago}", this.mostrar.MENSAJE_POSITIVO);
             }
             else
             {
                 //Si la cantidad no es menor o igual a los existentes entonces mostramos el siguiente mensaje 
-                Console.WriteLine($"\nNo tienes suficientes {nombre} para vender");
+                this.mostrar.MostrarMensaje($"\nNo tienes suficientes {nombre} para vender", this.mostrar.MENSAJE_NEGATIVO);
             }
 
             //Si hay productos existentes entonces 
@@ -398,16 +447,16 @@ namespace programacion2_semana7_arrays
                 //Modificamos la cantidad de productos
                 producto.Cantidad = cantidadDeProductosRestantes;
                 //Actualizamos el productos a vender
-                instanciaCrud.ActualizarProducto(id, producto);
+                instanciaCrud.ActualizarProducto(id - 1, producto);
                 //Mostramos el inventario actualizado
-                MostrarInventario(instanciaCrud.ObtenerProductos(), cabecera);
+                this.mostrar.MostrarInventario(instanciaCrud.ObtenerProductos(), cabecera);
             }
 
             //Si cantidadDeProductosRestantes es menor o igual a 0, quiere decir que el usuario quiere vender mas productos de los que tiene disponibles
             if (cantidadDeProductosRestantes <= 0)
             {
                 //Mostramos un mensaje indicando que no tiene productos suficientes
-                Console.WriteLine("\nTodos los productos han sido vendidos");
+                this.mostrar.MostrarMensaje("\nTodos los productos han sido vendidos", this.mostrar.MENSAJE_NEGATIVO);
             }
         }
     }
