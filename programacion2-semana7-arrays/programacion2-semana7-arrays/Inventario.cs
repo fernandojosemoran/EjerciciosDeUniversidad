@@ -8,6 +8,8 @@
     vender, actualizar productos y salir 
 */
 
+//Ejercicio mas o menos resuelto
+
 namespace programacion2_semana7_arrays
 {
     public class Inventario
@@ -143,7 +145,11 @@ namespace programacion2_semana7_arrays
         //Metodo del crud que eliminara el producto
         public void EliminarProducto(int id)
         {
-            Console.WriteLine($"\n\nEl Id es: {id}\n\n");
+            if (id == 0)
+            {
+                id = 1;
+            }
+
             //Declaramos un variable para guardar el nombre del producto a buscar
             string producto;
             //Buscar el producto en el inventario
@@ -322,7 +328,7 @@ namespace programacion2_semana7_arrays
             this.mostrar.MostrarInventario(this.instanciaCrud.ObtenerProductos(), this.cabecera);
 
             //Indicamos al usuario que el producto fue creado exitosamente
-            this.mostrar.MostrarMensaje($"\nProducto {nombre} creado exitosamente.", mostrar.MENSAJE_POSITIVO);
+            this.mostrar.MostrarMensaje($"\nProducto {nombre} creado exitosamente.", this.mostrar.MENSAJE_POSITIVO);
         }
 
         //Creamos un metodo el cual ejecute la logica que interactue con la actualizacion de un producto

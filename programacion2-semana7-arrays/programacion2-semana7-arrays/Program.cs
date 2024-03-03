@@ -9,7 +9,12 @@ namespace programacion2_semana7_arrays
         {
             //RevisarCalificaciones.MainRevisarCalificaciones();
 
-            new Inventario().MainInventario();
+            //new Inventario().MainInventario();
+
+            //new GastosDiarios().MainGastosDiarios();
+
+            new SistemaDeRegistros().MainSistemasDeRegistros();
+           
         }
     }
 }
