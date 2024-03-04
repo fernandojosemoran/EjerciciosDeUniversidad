@@ -15,7 +15,29 @@ namespace programacion2_semana7_arrays
         private Mostrar mostrar = new Mostrar();
         private Gasto gastos = new Gasto();
         public void MainGastosDiarios()
-        { 
+        {
+            Console.Title = "Gastos diarios";
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(@"
+                 ,ggggggggggg,                                     
+                dP""""""88""""""""""""Y8,              ,dPYb,               
+                Yb,  88      `8b              IP'`Yb               
+                 `""  88      ,8P              I8  8I               
+                     88aaaad8P""               I8  8'               
+                     88""""""""Yb,    gg      gg  I8 dP      gg     gg 
+                     88     ""8b   I8      8I  I8dP   88ggI8     8I 
+                     88      `8i  I8,    ,8I  I8P    8I  I8,   ,8I 
+                     88       Yb,,d8b,  ,d8b,,d8b,  ,8I ,d8b, ,d8I 
+                     88        Y88P'""Y88P""`Y88P'""Y88P""' P""""Y88P""888
+                                                              ,d8I'
+                                                            ,dP'8I 
+                                                           ,8""  8I 
+                                                           I8   8I 
+                                                           `8, ,8I 
+                                                            `Y8P""  
+            ");
+            Console.ForegroundColor = ConsoleColor.Gray;
+
             //Creamos un bucle que me permita pedirle al usuario sus gastos recientes
             for (; ; )
             {

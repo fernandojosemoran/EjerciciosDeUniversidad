@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarElemento.cs" />
     <Compile Include="GastosDiarios.cs" />
+    <Compile Include="ImprimirPosicionAndValor.cs" />
     <Compile Include="Inventario.cs" />
+    <Compile Include="MayorElementoPorColumna.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PromedioPorFila.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RevisarCalificaciones.cs" />
     <Compile Include="SistemaDeRegistros.cs" />
+    <Compile Include="SumaDeElementos.cs" />
+    <Compile Include="SumaDeParesAndImpares.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

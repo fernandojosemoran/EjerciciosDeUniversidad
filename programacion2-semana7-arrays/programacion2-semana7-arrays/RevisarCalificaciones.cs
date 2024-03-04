@@ -14,7 +14,7 @@ namespace programacion2_semana7_arrays
 {
     public class RevisarCalificaciones
     {
-        private static void MostrarBanner()
+        private static void _MostrarBanner()
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("====================");
@@ -32,42 +32,46 @@ namespace programacion2_semana7_arrays
         }
         public static void MainRevisarCalificaciones()
         {
-            MostrarBanner();
+            _MostrarBanner();
 
             Console.Write("Ingrese cantidad de calificaciones:\n");
             int cantidadDeCalificaciones = int.Parse(Console.ReadLine());
 
-            double[] calificaciones = new double[cantidadDeCalificaciones]; // Inicializar el arreglo con la cantidad de calificaciones especificada
+            //Inicializamos el arreglo con la cantidad de calificaciones especificada
+            double[] calificaciones = new double[cantidadDeCalificaciones]; 
+            //Creamos una variable que guarde el promedio
             double promedio = 0;
 
+            //Creamos un metodo que muestre las calificaciones
             void PedirCalificaciones()
             {
+                //Creamos un bucle for para pedir los datos necesarios al usuario
                 for (int iterador = 0; iterador < cantidadDeCalificaciones; iterador++)
                 {
-                    Console.WriteLine($"\nIngrese calificación {(iterador + 1)}:");
+                    //Indicamos al usuario que nos de una calificacion
+                    Console.Write($"\nIngrese calificación {(iterador + 1)}: ");
+                    //Convertimos los datos dados por el usuario en un numero
                     double calificacion = double.Parse(Console.ReadLine());
 
+                    //Guardamos las calificaciones dadas por el usuario
                     calificaciones[iterador] = calificacion;
+                    //Sumamos los valores dados por el usuario
                     promedio += calificacion;
                 }
             }
 
             void MostrarInformacion()
             {
-                //Si existen calificaciones
+                //Si existen calificaciones entonces
                 if (calificaciones.Length > 0)
                 {
-                    // Modificamos el valor de la variable promedia y calculamos el promedio
+                    //Modificamos el valor de la variable promedia y calculamos el promedio
                     promedio = promedio / calificaciones.Length;
 
                     //Mostramos los datos exigidos
                     Console.WriteLine($"\nLa calificacion mas alta es: {calificaciones.Max()}");
                     Console.WriteLine($"La calificacion mas baja es: {calificaciones.Min()}");
                     Console.WriteLine($"El promedio de las calificaciones es: {promedio}");
-                }
-                else
-                {
-                    Console.WriteLine("No se ingresaron calificaciones.");
                 }
             }
 
