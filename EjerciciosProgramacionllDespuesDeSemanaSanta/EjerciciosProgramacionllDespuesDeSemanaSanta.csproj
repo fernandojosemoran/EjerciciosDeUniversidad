@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E57C815C-45C2-4B2D-893A-3C42DEA73F14}</ProjectGuid>
+    <ProjectGuid>{FF955B6E-D12D-4323-9454-7FC05E11E65F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ejercicio7MostrarResultadosDeOperaciones</RootNamespace>
-    <AssemblyName>ejercicio7MostrarResultadosDeOperaciones</AssemblyName>
+    <RootNamespace>EjerciciosProgramacionllDespuesDeSemanaSanta</RootNamespace>
+    <AssemblyName>EjerciciosProgramacionllDespuesDeSemanaSanta</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ejercicios1\AgregarAndOrdenarCadenas.cs" />
+    <Compile Include="ejercicios1\CadenasMayoresDeDiezCaracteres.cs" />
+    <Compile Include="ejercicios1\ContieneLaLetraE.cs" />
+    <Compile Include="ejercicios1\EncontrarCadenaMasLarga.cs" />
+    <Compile Include="ejercicios1\EncontrarElementosConCaracterDado.cs" />
+    <Compile Include="ejercicios1\EncontrarListaDeEnterosPares.cs" />
+    <Compile Include="ejercicios1\EncontrarNumerosMayoresQueDiez.cs" />
+    <Compile Include="ejercicios1\IngrearDiezNumerosAndMostrarElMayorAndMinimo.cs" />
+    <Compile Include="ejercicios1\IngresarCincoNumeros.cs" />
+    <Compile Include="ejercicios1\SumarEnteros.cs" />
+    <Compile Include="Ejercicios2\EliminarMultiplos.cs" />
+    <Compile Include="Ejercicios2\EncontrarLaCadenaMasLargaSinUsarElMetodoMax.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
