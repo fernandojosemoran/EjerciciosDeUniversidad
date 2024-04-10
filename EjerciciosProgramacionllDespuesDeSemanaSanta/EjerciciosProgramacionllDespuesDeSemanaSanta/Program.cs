@@ -18,6 +18,8 @@ namespace EjerciciosProgramacionllDespuesDeSemanaSanta
     {
         static void Main(string[] args)
         {
+            //EJERCICIOS 1
+
             //IngresarCincoNumeros.MainIngresarCincoNumeros();
             //AgregarAndOrdenarCadenas.MainAgregarAndOrdenarCadenas();
             //IngrearDiezNumerosAndMostrarElMayorAndMinimo.MainIngrearDiezNumerosAndMostrarElMayorAndMinimo();
@@ -29,9 +31,18 @@ namespace EjerciciosProgramacionllDespuesDeSemanaSanta
             //EncontrarListaDeEnterosPares.MainEncontrarListaDeEnterosPares();
             //ContieneLaLetraE.MainContieneLaLetraE();
 
+            //EJERCICIOS 2 
 
             //EliminarMultiplos.MainEliminarMultiplos();
-            EncontrarLaCadenaMasLargaSinUsarElMetodoMax.MainEncontrarLaCadenaMasLargaSinUsarElMetodoMax();
+            //OrdenarDecendentementeAndEncontrarElSegundoNumeroMasGrande.MainOrdenarDecendentementeAndEncontrarElSegundoNumeroMasGrande();
+            //EncontrarPalabrasQueTenganLetras.MainEncontrarPalabrasQueTenganLetras();
+            //EncontrarNumerosPrimos.MainEncontrarNumerosPrimos();
+            //LongitudImpartQueEmpiecenConA.MainLongitudImpartQueEmpiecenConA();
+            //EncontrarElementosMayoresAlPromedio.MainEncontrarElementosMayoresAlPromedio();
+            //EncontrarSubCadena.MainEncontrarSubCadena();
+            //ElementosDiviciblesPorUnoDosAndCinco.MainElementosDiviciblesPorUnoDosAndCinco();
+
+            MayoresAlPromedioUsando10Elementos.MainMayoresAlPromedioUsando10Elementos();
 
             Console.ReadKey();
         }
