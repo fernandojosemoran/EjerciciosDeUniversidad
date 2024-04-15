@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\Diccionarios\Diccionarios\bin\Debug\Diccionarios.exe.config
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\Diccionarios\Diccionarios\bin\Debug\Diccionarios.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\Diccionarios\Diccionarios\bin\Debug\Diccionarios.pdb
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\Diccionarios\Diccionarios\obj\Debug\Diccionarios.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\Diccionarios\Diccionarios\obj\Debug\Diccionarios.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\Diccionarios\Diccionarios\obj\Debug\Diccionarios.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\Diccionarios\Diccionarios\obj\Debug\Diccionarios.pdb
