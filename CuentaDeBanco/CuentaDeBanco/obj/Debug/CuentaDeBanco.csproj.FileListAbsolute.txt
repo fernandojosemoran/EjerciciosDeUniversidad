@@ -1,0 +1,14 @@
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\CuentaDeBanco\CuentaDeBanco\bin\Debug\CuentaDeBanco.exe.config
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\CuentaDeBanco\CuentaDeBanco\bin\Debug\CuentaDeBanco.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\CuentaDeBanco\CuentaDeBanco\bin\Debug\CuentaDeBanco.pdb
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.pdb
+C:\Users\ferna\OneDrive\Escritorio\EjercicioDeAtm\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\EjercicioDeAtm\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\EjercicioDeAtm\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.exe
+C:\Users\ferna\OneDrive\Escritorio\EjercicioDeAtm\CuentaDeBanco\CuentaDeBanco\obj\Debug\CuentaDeBanco.pdb
+C:\Users\ferna\OneDrive\Escritorio\EjercicioDeAtm\CuentaDeBanco\CuentaDeBanco\bin\Debug\CuentaDeBanco.exe.config
+C:\Users\ferna\OneDrive\Escritorio\EjercicioDeAtm\CuentaDeBanco\CuentaDeBanco\bin\Debug\CuentaDeBanco.exe
+C:\Users\ferna\OneDrive\Escritorio\EjercicioDeAtm\CuentaDeBanco\CuentaDeBanco\bin\Debug\CuentaDeBanco.pdb
