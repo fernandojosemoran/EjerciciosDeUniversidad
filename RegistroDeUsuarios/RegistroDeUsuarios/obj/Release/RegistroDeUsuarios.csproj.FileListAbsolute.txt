@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\RegistroDeUsuarios\RegistroDeUsuarios\bin\Release\RegistroDeUsuarios.exe.config
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\RegistroDeUsuarios\RegistroDeUsuarios\bin\Release\RegistroDeUsuarios.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\RegistroDeUsuarios\RegistroDeUsuarios\bin\Release\RegistroDeUsuarios.pdb
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\RegistroDeUsuarios\RegistroDeUsuarios\obj\Release\RegistroDeUsuarios.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\RegistroDeUsuarios\RegistroDeUsuarios\obj\Release\RegistroDeUsuarios.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\RegistroDeUsuarios\RegistroDeUsuarios\obj\Release\RegistroDeUsuarios.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\RegistroDeUsuarios\RegistroDeUsuarios\obj\Release\RegistroDeUsuarios.pdb
