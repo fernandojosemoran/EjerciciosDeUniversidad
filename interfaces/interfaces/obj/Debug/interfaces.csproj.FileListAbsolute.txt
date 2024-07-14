@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\interfaces\interfaces\bin\Debug\interfaces.exe.config
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\interfaces\interfaces\bin\Debug\interfaces.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\interfaces\interfaces\bin\Debug\interfaces.pdb
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\interfaces\interfaces\obj\Debug\interfaces.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\interfaces\interfaces\obj\Debug\interfaces.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\interfaces\interfaces\obj\Debug\interfaces.exe
+C:\Users\ferna\OneDrive\Escritorio\registroDeClientes\interfaces\interfaces\obj\Debug\interfaces.pdb
